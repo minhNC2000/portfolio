@@ -1,25 +1,23 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.025be1fb.css",
-    "main.js": "/portfolio/static/js/main.7b170e2e.js",
-    "static/js/453.ace21015.chunk.js": "/portfolio/static/js/453.ace21015.chunk.js",
-    "static/media/avatar.png": "/portfolio/static/media/avatar.c2cd5a50a3b0a39e322c.png",
-    "static/media/Pacifico-Regular.ttf": "/portfolio/static/media/Pacifico-Regular.c0d735fc04154e03a691.ttf",
-    "static/media/Raleway-Regular.ttf": "/portfolio/static/media/Raleway-Regular.d9219d8a361ac3530c7e.ttf",
-    "static/media/Poppins-Regular.ttf": "/portfolio/static/media/Poppins-Regular.35d26b781dc5fda684cc.ttf",
-    "static/media/TikTok.svg": "/portfolio/static/media/TikTok.246c6d45455c90337954303201f4e382.svg",
-    "static/media/zalo.svg": "/portfolio/static/media/zalo.e444b7f0039639d225b296f882b8153f.svg",
-    "static/media/github.svg": "/portfolio/static/media/github.72568c972d0a60a10fc702a2c61c7f3f.svg",
-    "static/media/ui-ux-design.svg": "/portfolio/static/media/ui-ux-design.f2e02c15e42595c4ef86.svg",
-    "index.html": "/portfolio/index.html",
-    "static/media/fb.svg": "/portfolio/static/media/fb.1928227238d40ab69e52339685f19558.svg",
-    "static/media/web-development.svg": "/portfolio/static/media/web-development.c7bcbb961b58b638c5ab.svg",
-    "main.025be1fb.css.map": "/portfolio/static/css/main.025be1fb.css.map",
-    "main.7b170e2e.js.map": "/portfolio/static/js/main.7b170e2e.js.map",
-    "453.ace21015.chunk.js.map": "/portfolio/static/js/453.ace21015.chunk.js.map"
+    "main.css": "/static/css/main.c6a1352d.css",
+    "main.js": "/static/js/main.b2a96846.js",
+    "static/js/453.ace21015.chunk.js": "/static/js/453.ace21015.chunk.js",
+    "static/media/avatar.png": "/static/media/avatar.c2cd5a50a3b0a39e322c.png",
+    "static/media/Pacifico-Regular.ttf": "/static/media/Pacifico-Regular.c0d735fc04154e03a691.ttf",
+    "static/media/Raleway-Regular.ttf": "/static/media/Raleway-Regular.d9219d8a361ac3530c7e.ttf",
+    "static/media/Poppins-Regular.ttf": "/static/media/Poppins-Regular.35d26b781dc5fda684cc.ttf",
+    "static/media/TikTok.svg": "/static/media/TikTok.246c6d45455c90337954303201f4e382.svg",
+    "static/media/zalo.svg": "/static/media/zalo.e444b7f0039639d225b296f882b8153f.svg",
+    "static/media/github.svg": "/static/media/github.5d99024dafa1cd0d5008a331327c3de5.svg",
+    "index.html": "/index.html",
+    "static/media/fb.svg": "/static/media/fb.5376f1c7b0cb484deaa63ecc47fe9471.svg",
+    "main.c6a1352d.css.map": "/static/css/main.c6a1352d.css.map",
+    "main.b2a96846.js.map": "/static/js/main.b2a96846.js.map",
+    "453.ace21015.chunk.js.map": "/static/js/453.ace21015.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.025be1fb.css",
-    "static/js/main.7b170e2e.js"
+    "static/css/main.c6a1352d.css",
+    "static/js/main.b2a96846.js"
   ]
 }
