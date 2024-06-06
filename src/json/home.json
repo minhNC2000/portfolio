@@ -1,0 +1,16 @@
+{
+    "home": [
+        {
+            "title": "web development",
+            "content": "As a developer, I find myself most captivated by the power and flexibility of NEXT.js. I'm always eager to dive into new projects that leverage NEXT.js and discover innovative ways to create fast, scalable, and user-friendly applications.",
+            "icon": "web-development.svg"
+
+            
+        },
+        {
+            "title": "UI/UX Design",
+            "content": "With a focus on user-centric design and cutting-edge technologies, I thrive on building intuitive and efficient apps that make a positive impact on people's lives. Let's turn ideas into reality and shape the future together.",
+            "icon": "ui-ux-design.svg"
+        }
+    ]
+}

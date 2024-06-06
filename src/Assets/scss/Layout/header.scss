@@ -1,0 +1,61 @@
+.header {
+  .header_wrapper {
+    display: flex;
+
+    height: 104px;
+    padding: 44px 0px;
+    justify-content: space-between;
+    align-items: center;
+    flex-shrink: 0;
+    .logo {
+      font-family: "Pacifico" ;
+      font-size: 1.5rem;
+      span {
+        background: linear-gradient(180deg, #ff9c1a 0%, #ed250a 100%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+    }
+    .mode {
+      border: none;
+      cursor: pointer;
+      background-color: #ebf2fa;
+      box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
+      border-radius: 50%;
+      display: flex;
+      width: 56px;
+      height: 56px;
+      padding: 10px;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
+.night-mode {
+  background-color: black;
+
+  .home,
+  .resume,
+  .work,
+  
+  .profile,
+  .header {
+    background-color: black;
+    h1,
+    p {
+      color: white;
+    }
+  }
+  .contact{
+    background-color: black;
+    color:#ebf2fa;
+    h3{
+      color:black;
+    }
+    button {
+      color: #ebf2fa;
+    }
+  }
+}

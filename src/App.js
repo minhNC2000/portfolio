@@ -1,24 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter } from "react-router-dom";
+import DefaultLayout from "./Layout/DefaultLayout";
+import { ThemeProvider } from "@emotion/react";
+import { createTheme } from "@mui/material";
+
 
 function App() {
+  const theme = createTheme({
+    breakpoints: {
+      values: {
+        xs: 0,
+        sm: 768,
+        md: 900,
+        lg: 1440,
+      
+      },
+    },
+    palette: {
+    
+      secondary: {
+        main: '#f44336',
+      },
+    },
+  });
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ThemeProvider theme={theme}>
+      <BrowserRouter>
+        <DefaultLayout />
+      </BrowserRouter>
+    </ThemeProvider>
   );
 }
 

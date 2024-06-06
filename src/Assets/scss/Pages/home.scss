@@ -1,0 +1,44 @@
+.home {
+  background-color: #fff;
+  border-radius: 20px;
+  width: 100%;
+  height: 100%;
+  h1 {
+    letter-spacing: 1px;
+    color: #0b0909;
+    font-size: 2.5rem;
+    font-weight: 500;
+    font-weight: bold;
+    display: inline-block;
+  }
+  .introduce {
+    line-height: 30px;
+    margin: 26px auto;
+  }
+  h2 {
+    font-size: 2.5rem;
+    line-height: 40px;
+    letter-spacing: 0.8px;
+    font-weight: 500;
+    margin-bottom: 30px;
+  }
+  .card {
+    border-radius: 20px;
+    background-color: #ffebd1;
+    .icon {
+      display: inline-block;
+      height: 30px;
+      padding: 20px;
+    }
+    h3 {
+      display: inline-block;
+      text-transform: capitalize;
+
+      font-size: 1.5rem;
+      line-height: 30px;
+    }
+    p {
+      padding: 20px;
+    }
+  }
+}

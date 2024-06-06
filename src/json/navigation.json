@@ -1,0 +1,22 @@
+[
+    {
+      "icon": "HomeIcon",
+      "label": "Home",
+      "link": "/"
+    },
+    {
+      "icon": "AssignmentIcon",
+      "label": "Resume",
+      "link": "/resume"
+    },
+    {
+      "icon": "WorkIcon",
+      "label": "Project",
+      "link": "/work"
+    },
+    {
+      "icon": "PermContactCalendarIcon",
+      "label": "Contact",
+      "link": "/contact"
+    }
+  ]

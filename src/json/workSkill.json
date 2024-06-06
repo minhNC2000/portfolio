@@ -1,0 +1,51 @@
+{
+  "workSkills": [
+    {
+      "name": "ReactJS"
+    },
+    {
+      "name": "HTML5"
+    },
+    {
+      "name": "CSS"
+    },
+    {
+      "name": "SCSS"
+    },
+    {
+      "name": "Tailwind CSS"
+    },
+    {
+      "name": "Bootstrap"
+    },
+    {
+      "name": "Material-UI (MUI)"
+    },
+    {
+      "name": "Ant Design"
+    },
+    {
+      "name": "JavaScript"
+    }
+  ],
+  
+    "softSkills": [
+      {
+        "name": "Time Management"
+      },
+      {
+        "name": "Research"
+      },
+      {
+        "name": "Writing"
+      },
+      {
+        "name": "Flexibility"
+      },
+      {
+        "name":"depending on improvisation"
+      }
+    ]
+  
+  
+}

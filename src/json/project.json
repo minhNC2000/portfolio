@@ -1,0 +1,30 @@
+[
+  {
+    "name": "Car Dealer",
+    "url": "",
+    "codeWith": "ReactJS",
+    "type": "reactjs",
+    "image": ""
+  },
+  {
+    "name": "Hvac",
+    "url": "https://hvac-project.vercel.app/",
+    "codeWith": "HTML,CSS,JS,ReactJS",
+    "type": "reactjs",
+    "image": "chưa có đâu"
+  },
+  {
+    "name": "gourmet catering",
+    "url": "https://gourmet-catering-chi.vercel.app/",
+    "codeWith": "HTML,CSS,ReactJS",
+    "type": "landingpage",
+    "image": "images/gourmetCatering.png"
+  },
+  {
+    "name": "The Band",
+    "url": "https://minhnc2000.github.io/theband/",
+    "codeWith": "HTML,CSS,JS",
+    "type": "landingpage",
+    "image": "images/theband.png"
+  }
+]

@@ -1,0 +1,111 @@
+.profile {
+  width: 100%;
+  text-align: center;
+  border-radius: 20px;
+  background: #fff;
+  width: 430px;
+  padding-bottom: 50px;
+  box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.25);
+  .avatar {
+    width: 230px;
+    height: 240px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
+    transform: translateY(-50px);
+  }
+  h1 {
+    color: #000;
+    font-family: "Raleway";
+    font-weight: 700;
+    font-size: 1.7rem;
+    line-height: 36px;
+  }
+  p {
+    color: rgba(11, 9, 9, 0.5);
+
+    font-family: "Raleway";
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 40px;
+  }
+  .social-icons {
+    img {
+      width: 60px;
+      height: 60px;
+      margin: 20px 15px;
+      padding: 15px;
+      border-radius: 8px;
+      background: #f2f7fc;
+    }
+  }
+  .info {
+    width: 350px;
+    height: 360px;
+    border-radius: 20px;
+    background: #f2f5f9;
+    display: block;
+    margin: 0 auto;
+
+    text-align: left;
+    .line {
+      content: "";
+      width: 256px;
+      height: 1px;
+      background-color: #e3e3e3;
+      display: block;
+      margin: 0 auto;
+    }
+    .phone {
+      padding-top: 30px;
+    }
+    .phone,
+    .email,
+    .location {
+      line-height: 20px;
+    }
+
+    .icon {
+      display: inline-block;
+      color: #e80505;
+      margin: 15px 10px;
+      line-height: 20px;
+
+      svg {
+        font-size: 2rem;
+        &:nth-child(2) {
+          color: #ff9c1b;
+        }
+      }
+    }
+    .info-content_wrap {
+      display: inline-block;
+      p {
+        color: rgba(26, 16, 3, 0.5);
+        font-family: "Raleway";
+        font-size: 1rem;
+        font-weight: 600;
+      }
+      a {
+        color: #000;
+        font-family: "Raleway";
+        font-size: 1rem;
+        font-weight: 600;
+        line-height: 20px;
+      }
+    }
+    .download {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      margin: 20px auto;
+      border: 1px solid transparent;
+      padding: 10px 20px;
+      color: white;
+      font-family: "Raleway";
+      border-radius: 20px;
+      background: linear-gradient(91deg, #ff9c1a 7.92%, #e80505 108.2%);
+    }
+  }
+}
