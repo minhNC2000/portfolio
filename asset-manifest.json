@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/static/css/main.4ac1b44a.css",
+    "main.js": "/static/js/main.d7bc33f8.js",
+    "static/js/453.ace21015.chunk.js": "/static/js/453.ace21015.chunk.js",
+    "static/media/avatar.png": "/static/media/avatar.c2cd5a50a3b0a39e322c.png",
+    "static/media/Pacifico-Regular.ttf": "/static/media/Pacifico-Regular.c0d735fc04154e03a691.ttf",
+    "static/media/Raleway-Regular.ttf": "/static/media/Raleway-Regular.d9219d8a361ac3530c7e.ttf",
+    "static/media/Poppins-Regular.ttf": "/static/media/Poppins-Regular.35d26b781dc5fda684cc.ttf",
+    "static/media/TikTok.svg": "/static/media/TikTok.246c6d45455c90337954303201f4e382.svg",
+    "static/media/zalo.svg": "/static/media/zalo.e444b7f0039639d225b296f882b8153f.svg",
+    "static/media/github.svg": "/static/media/github.72568c972d0a60a10fc702a2c61c7f3f.svg",
+    "static/media/ui-ux-design.svg": "/static/media/ui-ux-design.f2e02c15e42595c4ef86.svg",
+    "index.html": "/index.html",
+    "static/media/fb.svg": "/static/media/fb.1928227238d40ab69e52339685f19558.svg",
+    "static/media/web-development.svg": "/static/media/web-development.c7bcbb961b58b638c5ab.svg",
+    "main.4ac1b44a.css.map": "/static/css/main.4ac1b44a.css.map",
+    "main.d7bc33f8.js.map": "/static/js/main.d7bc33f8.js.map",
+    "453.ace21015.chunk.js.map": "/static/js/453.ace21015.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4ac1b44a.css",
+    "static/js/main.d7bc33f8.js"
+  ]
+}
