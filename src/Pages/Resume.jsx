@@ -66,12 +66,28 @@ const Resume = () => {
               <div className="card">
                 <p className="year">03/2024-06/2024</p>
                 <p className="subject">Front-end</p>
-                <p className="school">DevPro</p>
+                <p className="school">
+                  <a
+                    href="https://www.devpro.edu.vn/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    DevPro
+                  </a>
+                </p>
               </div>
               <div className="card">
                 <p className="year">2018-2022</p>
                 <p className="subject">infomation technology</p>
-                <p className="school">HUBT</p>
+                <p className="school">
+                  <a
+                    href="https://hubt.edu.vn/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    HUBT
+                  </a>
+                </p>
               </div>
             </div>
           </Grid>

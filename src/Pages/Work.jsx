@@ -1,6 +1,6 @@
 import React from "react";
 import "../Assets/scss/Pages/work.scss";
-import { Box, Container, Tab, Tabs } from "@mui/material";
+import { Box, Container, Grid, Tab, Tabs } from "@mui/material";
 import PropTypes from "prop-types";
 import projects from "../json/project.json";
 
@@ -17,7 +17,9 @@ function CustomTabPanel(props) {
     >
       {value === index && (
         <Box sx={{ flexBasis: "50%", p: 2 }}>
-          <div>{children}</div>
+          <Grid container spacing={1}>
+            {children}
+          </Grid>
         </Box>
       )}
     </div>
@@ -43,7 +45,7 @@ const Work = () => {
   const handleChange = (e, newValue) => {
     setValue(newValue);
   };
- 
+
   return (
     <div className="work">
       <Container maxWidth="md">
@@ -64,50 +66,90 @@ const Work = () => {
         </Box>
         <CustomTabPanel value={value} index={0}>
           {projects.map((project, index) => (
-            <div key={index} className="projectCard">
-              <a href={project.url} target="_blank" rel="noreferrer">
-                <img src={project.image} alt={project.name}  />
-        
-                <h3 className="projectName">{project.name}</h3>
-                <p className="techused">{project.codeWith}</p>
-              </a>
-            </div>
+            <Grid item xs={12} sm={6}>
+              <div
+                key={index}
+                className={`projectCard ${
+                  project.process === "incomplete" ? "coming-soon" : ""
+                }`}
+              >
+                <a href={project.url} target="_blank" rel="noreferrer">
+                  <img
+                    src={
+                      project.image === "" ? { display: "none" } : project.image
+                    }
+                    alt={project.image === "" ? "..." : project.name}
+                  />
+
+                  <h3 className="projectName">{project.name}</h3>
+                  <p className="techused">{project.codeWith}</p>
+                </a>
+              </div>
+            </Grid>
           ))}
         </CustomTabPanel>
         <CustomTabPanel value={value} index={1}>
           {projects
             .filter((project) => project.type === "reactjs")
             .map((project, index) => (
-              <div key={index} className="projectCard">
-                <a
+              <Grid item xs={12} sm={6}>
+                <div
                   key={index}
-                  href={project.url}
-                  target="_blank"
-                  rel="noreferrer"
+                  className={`projectCard ${
+                    project.process === "incomplete" ? "coming-soon" : ""
+                  }`}
                 >
-                  <img src={project.image} alt="" />
-                  <h3 className="projectName">{project.name}</h3>
-                  <p className="techused">{project.codeWith}</p>
-                </a>
-              </div>
+                  <a
+                    key={index}
+                    href={project.url}
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <img
+                      src={
+                        project.image === ""
+                          ? { display: "none" }
+                          : project.image
+                      }
+                      alt={project.image === "" ? "..." : project.name}
+                    />
+                    <h3 className="projectName">{project.name}</h3>
+                    <p className="techused">{project.codeWith}</p>
+                  </a>
+                </div>
+              </Grid>
             ))}
         </CustomTabPanel>
         <CustomTabPanel value={value} index={2}>
           {projects
             .filter((project) => project.type === "landingpage")
             .map((project, index) => (
-              <div key={index} className="projectCard">
-                <a
+              <Grid item xs={12} sm={6}>
+                <div
                   key={index}
-                  href={project.url}
-                  target="_blank"
-                  rel="noreferrer"
+                  className={`projectCard ${
+                    project.process === "incomplete" ? "coming-soon" : ""
+                  }`}
                 >
-                  <img src={project.image} alt="" />
-                  <h3 className="projectName">{project.name}</h3>
-                  <p className="techused">{project.codeWith}</p>
-                </a>
-              </div>
+                  <a
+                    key={index}
+                    href={project.url}
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <img
+                      src={
+                        project.image === ""
+                          ? { display: "none" }
+                          : project.image
+                      }
+                      alt={project.image === "" ? "..." : project.name}
+                    />
+                    <h3 className="projectName">{project.name}</h3>
+                    <p className="techused">{project.codeWith}</p>
+                  </a>
+                </div>
+              </Grid>
             ))}
         </CustomTabPanel>
       </Container>

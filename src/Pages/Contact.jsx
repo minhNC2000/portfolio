@@ -3,6 +3,9 @@ import "../Assets/scss/Pages/contact.scss";
 import { Container, Grid } from "@mui/material";
 
 import emailjs from "emailjs-com";
+import { Bounce, ToastContainer, toast } from "react-toastify";
+
+import "react-toastify/dist/ReactToastify.css";
 const Contact = () => {
   const formRef = useRef();
 
@@ -46,6 +49,16 @@ const Contact = () => {
       e.target,
       "xegrU455yk9cb46b4"
     );
+    toast.success("🤷‍♂️ Gửi thành công!", {
+      position: "bottom-right",
+      autoClose: 5000,
+      hideProgressBar: true,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "colored",
+    });
     e.target.reset();
   };
   return (
@@ -87,6 +100,7 @@ const Contact = () => {
                 <label htmlFor="message">Message :</label>
                 <textarea name="message"></textarea>
                 <button type="submit">Send</button>
+                <ToastContainer transition={Bounce} />
               </form>
             </div>
           </Grid>

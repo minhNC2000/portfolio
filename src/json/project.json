@@ -1,30 +1,31 @@
 [
   {
-    "name": "Car Dealer",
+    "name": "Phone Shop",
     "url": "",
     "codeWith": "ReactJS",
     "type": "reactjs",
-    "image": ""
+    "image": "",
+    "process": "incomplete"
   },
   {
     "name": "Hvac",
     "url": "https://hvac-project.vercel.app/",
     "codeWith": "HTML,CSS,JS,ReactJS",
     "type": "reactjs",
-    "image": "chưa có đâu"
+    "image": "Assets/images/havac.jpg"
   },
   {
     "name": "gourmet catering",
     "url": "https://gourmet-catering-chi.vercel.app/",
     "codeWith": "HTML,CSS,ReactJS",
     "type": "landingpage",
-    "image": "images/gourmetCatering.png"
+    "image": "Assets/images/gourmetCatering.png"
   },
   {
     "name": "The Band",
     "url": "https://minhnc2000.github.io/theband/",
     "codeWith": "HTML,CSS,JS",
     "type": "landingpage",
-    "image": "images/theband.png"
+    "image": "Assets/images/theband.png"
   }
 ]
