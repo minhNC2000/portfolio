@@ -1,25 +1,31 @@
 import React from "react";
 import "../Assets/scss/Layout/profile.scss";
-import { useMediaQuery } from "@mui/material";
-import { useTheme } from "@mui/material/styles";
 
-import avatar from "../Assets/images/avatar.png";
+import "../Assets/scss/responsive.scss";
+
+import avatar from "../Assets/images/avatar.jpg";
 import fb from "../Assets/icon/fb.svg";
 import zalo from "../Assets/icon/zalo.svg";
 import tiktok from "../Assets/icon/TikTok.svg";
 import github from "../Assets/icon/github.svg";
 import { Drafts, FileDownload, PhoneIphone, Place } from "@mui/icons-material";
 const Profile = () => {
-  const theme = useTheme();
-  const matches = useMediaQuery(theme.breakpoints.down("lg"));
+  const handleDownload = () => {
+    const link =
+      "https://drive.google.com/file/d/1byaYV7M-tb3xNjnvDJWGDvfEksxWZShB/view?usp=sharing";
+
+    // Create a new link element
+    const a = document.createElement("a");
+    a.href = link;
+
+    a.target = "_blank";
+
+    // Simulate a click on the link
+    a.click();
+  };
+
   return (
-    <div
-      className="profile"
-      style={{
-        width: matches ? "100%" : "",
-        marginBottom: matches ? "30px" : "",
-      }}
-    >
+    <div className="profile">
       <img src={avatar} alt="avatar" className="avatar" />
       <h1>Nguyễn Công Minh </h1>
       <p>Intern Frontend</p>
@@ -83,7 +89,7 @@ const Profile = () => {
           </div>
         </div>
         <div className="line"></div>
-        <button className="download">
+        <button className="download" onClick={handleDownload}>
           <FileDownload />
           Download Resume
         </button>

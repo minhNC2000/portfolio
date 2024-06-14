@@ -1,12 +1,19 @@
 @import "./breakpoint";
-@media   (min-width: $xs) and (max-width: $lg) {
-  .resume {
-    
-    background: #000 !important;
-    .education_title {
+@media (min-width: $xs) and (max-width: $lg) {
+  .navigation {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 9999;
+    margin-top: 0;
+    left: 0;
+  }
+  .profile {
+    width: 100% !important;
+    margin: 50px 40px 50px 0;
+    .info {
+      width: 500px !important;
     }
   }
-  .home{
-    background-color: #000;
-  }
+  
 }

@@ -4,8 +4,8 @@ import "../Assets/scss/responsive.scss";
 import { Container, Grid } from "@mui/material";
 import dataHome from "../json/home.json";
 import { Helmet } from "react-helmet";
-const Home = (props) => {
-  const { matches } = props;
+const Home = () => {
+
   return (
     <>
       <Helmet>

@@ -22,22 +22,10 @@ const Navigation = () => {
   const theme = useTheme();
   const matches = useMediaQuery(theme.breakpoints.down("lg"));
   return (
-    
-    <div
-      className="navigation"
-      style={{
-        width: matches ? "100%" : "",
-        // position: matches ? "fixed" : "relative",
-        // bottom: matches ? 0 : "auto",
-        zIndex: matches ? 9999 : "auto",
-        marginBottom: 60
-        // left: matches ? "50%" : "auto",
-        // transform: matches ? "translateX(-50%)" : "none",
-      }}
-    >
+    <div className="navigation">
       <Grid container>
         <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
-          <ul className="nav_card">
+          <ul className="nav_card" style={{ gap: matches ? 10 : "" }}>
             {navigationData.map((item) => (
               <NavLink to={item.link} key={item.label}>
                 {React.createElement(iconMap[item.icon], {})}

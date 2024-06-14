@@ -62,10 +62,11 @@
         border-radius: 20px;
         background-color: transparent;
         border: 1px solid #ff6651;
-    &:disabled {
-      color: #b5b5b5;
-      border: 1px solid transparent;
-    }
+        &:disabled {
+          color: #b5b5b5;
+          border: 1px solid transparent;
+          cursor: not-allowed;
+        }
       }
     }
   }

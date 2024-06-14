@@ -8,7 +8,7 @@
     align-items: center;
     flex-shrink: 0;
     .logo {
-      font-family: "Pacifico" ;
+      font-family: "Pacifico";
       font-size: 1.5rem;
       span {
         background: linear-gradient(180deg, #ff9c1a 0%, #ed250a 100%);
@@ -35,27 +35,60 @@
 }
 .night-mode {
   background-color: black;
-
-  .home,
-  .resume,
-  .work,
-  
-  .profile,
   .header {
-    background-color: black;
+  
+    .logo {
+      p {
+        color: white;
+      }
+    }
+  }
+  .navigation {
+    background-color: rgb(44, 43, 43);
+  
+  }
+
+  .profile {
+    background-color: rgb(44, 43, 43);
     h1,
     p {
       color: white;
     }
-  }
-  .contact{
-    background-color: black;
-    color:#ebf2fa;
-    h3{
-      color:black;
+    .info {
+      background-color: transparent;
+      p {
+        color: red !important;
+      }
+      a {
+        color: white !important;
+      }
     }
+  }
+  .home,
+  .resume,
+  .work,
+  .contact {
+    background-color: rgb(44, 43, 43);
+    h1,
+    h2,
+    .title,
+    .introduce,
+    label,
     button {
-      color: #ebf2fa;
+      color: white !important;
+    }
+    .skill-title {
+      h2 {
+        color: black !important;
+      }
+    }
+    .contact-form {
+      p {
+        color: white !important;
+      }
+      button[type=submit]:disabled {
+        color: black !important
+      }
     }
   }
 }

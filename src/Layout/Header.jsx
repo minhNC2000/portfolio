@@ -26,7 +26,7 @@ const Header = () => {
                   Minh <span>Nguyễn</span>
                 </p>
               </div>
-              <button className="mode" onClick={toggleMode} disabled>
+              <button className="mode" onClick={toggleMode} >
                 {mode === "light" ? (
                   <NightlightIcon />
                 ) : (
