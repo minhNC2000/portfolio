@@ -3,6 +3,7 @@ import "../Assets/scss/Pages/work.scss";
 import { Box, Container, Grid, Tab, Tabs } from "@mui/material";
 import PropTypes from "prop-types";
 import projects from "../json/project.json";
+import { Helmet } from "react-helmet";
 
 function CustomTabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -39,72 +40,50 @@ function a11yProps(index) {
   };
 }
 
-const Work = () => {
+const Work = (props) => {
   const [value, setValue] = React.useState(0);
-
+  const { matches } = props;
   const handleChange = (e, newValue) => {
     setValue(newValue);
   };
 
   return (
-    <div className="work">
-      <Container maxWidth="md">
-        <h1>Project</h1>
-        <Box sx={{ borderBottom: 1, borderColor: "divider" }}>
-          <Tabs
-            value={value}
-            onChange={handleChange}
-            textColor="secondary"
-            indicatorColor="secondary"
-            variant="fullWidth"
-            aria-label="basic tabs example"
-          >
-            <Tab label="All" {...a11yProps(0)} />
-            <Tab label="ReactJS" {...a11yProps(1)} />
-            <Tab label="Landing Page" {...a11yProps(2)} />
-          </Tabs>
-        </Box>
-        <CustomTabPanel value={value} index={0}>
-          {projects.map((project, index) => (
-            <Grid item xs={12} sm={6}>
-              <div
-                key={index}
-                className={`projectCard ${
-                  project.process === "incomplete" ? "coming-soon" : ""
-                }`}
-              >
-                <a href={project.url} target="_blank" rel="noreferrer">
-                  <img
-                    src={
-                      project.image === "" ? { display: "none" } : project.image
-                    }
-                    alt={project.image === "" ? "..." : project.name}
-                  />
+    <>
+      <Helmet>
+        <title>{`Portfolio | Project`}</title>
 
-                  <h3 className="projectName">{project.name}</h3>
-                  <p className="techused">{project.codeWith}</p>
-                </a>
-              </div>
-            </Grid>
-          ))}
-        </CustomTabPanel>
-        <CustomTabPanel value={value} index={1}>
-          {projects
-            .filter((project) => project.type === "reactjs")
-            .map((project, index) => (
+        <meta name="description" content="This is resume page" />
+        <meta property="og:title" content="My Resume" />
+        <meta property="og:description" content="This is resume page" />
+      </Helmet>
+
+      <div className="work">
+        <Container maxWidth="md">
+          <h1>Project</h1>
+          <Box sx={{ borderBottom: 1, borderColor: "divider" }}>
+            <Tabs
+              value={value}
+              onChange={handleChange}
+              textColor="secondary"
+              indicatorColor="secondary"
+              variant="fullWidth"
+              aria-label="basic tabs example"
+            >
+              <Tab label="All" {...a11yProps(0)} />
+              <Tab label="ReactJS" {...a11yProps(1)} />
+              <Tab label="Landing Page" {...a11yProps(2)} />
+            </Tabs>
+          </Box>
+          <CustomTabPanel value={value} index={0}>
+            {projects.map((project) => (
               <Grid item xs={12} sm={6}>
                 <div
-                  key={index}
+                  key={project.name}
                   className={`projectCard ${
                     project.process === "incomplete" ? "coming-soon" : ""
                   }`}
                 >
-                  <a
-                    key={index}
-                    href={project.url}
-                    target="_blank"
-                    rel="noreferrer"
-                  >
+                  <a href={project.url} target="_blank" rel="noreferrer">
                     <img
                       src={
                         project.image === ""
@@ -113,47 +92,81 @@ const Work = () => {
                       }
                       alt={project.image === "" ? "..." : project.name}
                     />
+
                     <h3 className="projectName">{project.name}</h3>
                     <p className="techused">{project.codeWith}</p>
                   </a>
                 </div>
               </Grid>
             ))}
-        </CustomTabPanel>
-        <CustomTabPanel value={value} index={2}>
-          {projects
-            .filter((project) => project.type === "landingpage")
-            .map((project, index) => (
-              <Grid item xs={12} sm={6}>
-                <div
-                  key={index}
-                  className={`projectCard ${
-                    project.process === "incomplete" ? "coming-soon" : ""
-                  }`}
-                >
-                  <a
-                    key={index}
-                    href={project.url}
-                    target="_blank"
-                    rel="noreferrer"
+          </CustomTabPanel>
+          <CustomTabPanel value={value} index={1}>
+            {projects
+              .filter((project) => project.type === "reactjs")
+              .map((project) => (
+                <Grid item xs={12} sm={6}>
+                  <div
+                    key={project.name}
+                    className={`projectCard ${
+                      project.process === "incomplete" ? "coming-soon" : ""
+                    }`}
                   >
-                    <img
-                      src={
-                        project.image === ""
-                          ? { display: "none" }
-                          : project.image
-                      }
-                      alt={project.image === "" ? "..." : project.name}
-                    />
-                    <h3 className="projectName">{project.name}</h3>
-                    <p className="techused">{project.codeWith}</p>
-                  </a>
-                </div>
-              </Grid>
-            ))}
-        </CustomTabPanel>
-      </Container>
-    </div>
+                    <a
+                      key={project.name}
+                      href={project.url}
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <img
+                        src={
+                          project.image === ""
+                            ? { display: "none" }
+                            : project.image
+                        }
+                        alt={project.image === "" ? "..." : project.name}
+                      />
+                      <h3 className="projectName">{project.name}</h3>
+                      <p className="techused">{project.codeWith}</p>
+                    </a>
+                  </div>
+                </Grid>
+              ))}
+          </CustomTabPanel>
+          <CustomTabPanel value={value} index={2}>
+            {projects
+              .filter((project) => project.type === "landingpage")
+              .map((project) => (
+                <Grid item xs={12} sm={6}>
+                  <div
+                    key={project.name}
+                    className={`projectCard ${
+                      project.process === "incomplete" ? "coming-soon" : ""
+                    }`}
+                  >
+                    <a
+                      key={project.name}
+                      href={project.url}
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <img
+                        src={
+                          project.image === ""
+                            ? { display: "none" }
+                            : project.image
+                        }
+                        alt={project.image === "" ? "..." : project.name}
+                      />
+                      <h3 className="projectName">{project.name}</h3>
+                      <p className="techused">{project.codeWith}</p>
+                    </a>
+                  </div>
+                </Grid>
+              ))}
+          </CustomTabPanel>
+        </Container>
+      </div>
+    </>
   );
 };
 

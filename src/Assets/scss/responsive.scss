@@ -1,0 +1,12 @@
+@import "./breakpoint";
+@media   (min-width: $xs) and (max-width: $lg) {
+  .resume {
+    
+    background: #000 !important;
+    .education_title {
+    }
+  }
+  .home{
+    background-color: #000;
+  }
+}

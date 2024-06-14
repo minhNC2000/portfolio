@@ -7,8 +7,11 @@ import HomeIcon from "@mui/icons-material/Home";
 import AssignmentIcon from "@mui/icons-material/Assignment";
 import WorkIcon from "@mui/icons-material/Work";
 import PermContactCalendarIcon from "@mui/icons-material/PermContactCalendar";
+import { useMediaQuery } from "@mui/material";
+import { useTheme } from "@mui/material/styles";
 
 import navigationData from "../json/navigation.json";
+
 const iconMap = {
   HomeIcon,
   AssignmentIcon,
@@ -16,8 +19,22 @@ const iconMap = {
   PermContactCalendarIcon,
 };
 const Navigation = () => {
+  const theme = useTheme();
+  const matches = useMediaQuery(theme.breakpoints.down("lg"));
   return (
-    <div className="navigation">
+    
+    <div
+      className="navigation"
+      style={{
+        width: matches ? "100%" : "",
+        // position: matches ? "fixed" : "relative",
+        // bottom: matches ? 0 : "auto",
+        zIndex: matches ? 9999 : "auto",
+        marginBottom: 60
+        // left: matches ? "50%" : "auto",
+        // transform: matches ? "translateX(-50%)" : "none",
+      }}
+    >
       <Grid container>
         <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
           <ul className="nav_card">

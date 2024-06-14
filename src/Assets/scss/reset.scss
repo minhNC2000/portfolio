@@ -14,6 +14,7 @@ ul {
 body {
   font-size: 16px;
   background-color: $white_color;
+  scroll-behavior: smooth;
   h1 {
     font-family: "Poppins";
     text-transform: uppercase;
@@ -40,6 +41,5 @@ body {
     stroke-width: 2px;
     stroke: #fe9119;
     display: inline-block;
-    
   }
 }

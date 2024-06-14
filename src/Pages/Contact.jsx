@@ -6,7 +6,9 @@ import emailjs from "emailjs-com";
 import { Bounce, ToastContainer, toast } from "react-toastify";
 
 import "react-toastify/dist/ReactToastify.css";
+import { Helmet } from "react-helmet";
 const Contact = () => {
+
   const formRef = useRef();
 
   useEffect(() => {
@@ -24,6 +26,7 @@ const Contact = () => {
       const isMessageEmpty = messageInput.value === "";
 
       submitButton.disabled = isNameEmpty || isEmailEmpty || isMessageEmpty;
+    
     };
 
     nameInput.addEventListener("input", validateForm);
@@ -62,12 +65,21 @@ const Contact = () => {
     e.target.reset();
   };
   return (
+    <>
+    <Helmet>
+      <title>{`Portfolio | Contact`}</title>
+
+      <meta name="description" content="This is resume page" />
+      <meta property="og:title" content="My Resume" />
+      <meta property="og:description" content="This is resume page" />
+    </Helmet>
+
     <div className="contact">
       <Container maxWidth="md">
         <h1>Contact</h1>
 
         <Grid container spacing={2}>
-          <Grid item xs={12} sm={12} md={6} lg={6} xl={6}>
+          <Grid item xs={12} sm={12} md={12} lg={6} xl={6}>
             <div className="phone">
               <div className="content">
                 <h3>Phone :</h3>
@@ -76,7 +88,7 @@ const Contact = () => {
               </div>
             </div>
           </Grid>
-          <Grid item xs={12} sm={12} md={6} lg={6} xl={6}>
+          <Grid item xs={12} sm={12} md={12} lg={6} xl={6}>
             <div className="email">
               <div className="content">
                 <h3>Email :</h3>
@@ -88,7 +100,7 @@ const Contact = () => {
           </Grid>
 
           <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
-            <div className="contact-form">
+            <div className="contact-form" >
               <p>
                 Please <b>contact me</b> if you need me !!
               </p>
@@ -107,6 +119,7 @@ const Contact = () => {
         </Grid>
       </Container>
     </div>
+    </>
   );
 };
 

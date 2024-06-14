@@ -1,5 +1,7 @@
 import React from "react";
 import "../Assets/scss/Layout/profile.scss";
+import { useMediaQuery } from "@mui/material";
+import { useTheme } from "@mui/material/styles";
 
 import avatar from "../Assets/images/avatar.png";
 import fb from "../Assets/icon/fb.svg";
@@ -8,8 +10,16 @@ import tiktok from "../Assets/icon/TikTok.svg";
 import github from "../Assets/icon/github.svg";
 import { Drafts, FileDownload, PhoneIphone, Place } from "@mui/icons-material";
 const Profile = () => {
+  const theme = useTheme();
+  const matches = useMediaQuery(theme.breakpoints.down("lg"));
   return (
-    <div className="profile">
+    <div
+      className="profile"
+      style={{
+        width: matches ? "100%" : "",
+        marginBottom: matches ? "30px" : "",
+      }}
+    >
       <img src={avatar} alt="avatar" className="avatar" />
       <h1>Nguyễn Công Minh </h1>
       <p>Intern Frontend</p>
