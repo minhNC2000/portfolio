@@ -1,19 +1,65 @@
 @import "./breakpoint";
 @media (min-width: $xs) and (max-width: $lg) {
+  // .navigation {
+  //   width: 100%;
+  //   // position: fixed;
+  //   // top: 0;
+  //   z-index: 9999;
+  //   // margin-top: 0;
+  //   bottom: 0;
+  //   left: 0;
+  // }
   .navigation {
-    width: 100%;
     position: fixed;
-    top: 0;
-    z-index: 9999;
-    margin-top: 0;
+    bottom: 0;
     left: 0;
+    width: 100%;
+
+    color: #fff;
+
+    transition: left 0.5s ease-in-out;
+  }
+
+  .navigation.closed {
+    left: -200%;
+  }
+
+  .navigation.open {
+    left: 0;
+  }
+
+  .arrow-button {
+    position: fixed;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    font-size: 40px;
+    background-color: transparent;
+    border: 1px solid transparent;
+    cursor: pointer;
+    transition: left 1s ease-in-out;
+
+    animation: pulse 2s infinite;
+  }
+  @keyframes pulse {
+    0% {
+      transform: scale(2);
+    }
+    50% {
+      transform: scale(1.5);
+    }
+    100% {
+      transform: scale(2);
+    }
   }
   .profile {
     width: 100% !important;
     margin: 50px 40px 50px 0;
-    .info {
-      width: 500px !important;
-    }
   }
-  
+  .home,
+  .work,
+  .resume,
+  .contact {
+    margin-bottom: 150px;
+  }
 }
