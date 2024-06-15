@@ -42,8 +42,12 @@ const BackToTop = () => {
             border: none;
             border-radius: 5px;
             cursor: pointer;
+          
+        
+             
           }
 
+          
           .back-to-top:hover {
             background-color: transparent;
             color: red;
@@ -52,7 +56,7 @@ const BackToTop = () => {
         `}
       </style>
       {showButton && (
-        <button onClick={handleClick} className="back-to-top">
+        <button onClick={handleClick} className={`back-to-top`}>
           <ArrowUpwardIcon />
         </button>
       )}

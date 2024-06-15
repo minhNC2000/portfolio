@@ -12,8 +12,8 @@
       font-size: 1.5rem;
       span {
         background: linear-gradient(180deg, #ff9c1a 0%, #ed250a 100%);
-        background-clip: text;
         -webkit-background-clip: text;
+        background-clip: text;
         -webkit-text-fill-color: transparent;
       }
     }
@@ -36,7 +36,6 @@
 .night-mode {
   background-color: black;
   .header {
-  
     .logo {
       p {
         color: white;
@@ -45,9 +44,9 @@
   }
   .navigation {
     background-color: rgb(44, 43, 43);
-  .arrow-button {
-    color:white
-  }
+    .arrow-button {
+      color: white;
+    }
   }
 
   .profile {
@@ -88,8 +87,8 @@
       p {
         color: white !important;
       }
-      button[type=submit]:disabled {
-        color: black !important
+      button[type="submit"]:disabled {
+        color: black !important;
       }
     }
   }

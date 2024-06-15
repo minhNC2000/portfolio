@@ -8,13 +8,11 @@ import "../Assets/scss/reset.scss";
 
 import { Container, Grid } from "@mui/material";
 import Profile from "./Profile";
-import { useMediaQuery } from "@mui/material";
-import { useTheme } from "@mui/material/styles";
+
 import BackToTop from "./Backtotop";
 
 const DefaultLayout = () => {
-  const theme = useTheme();
-  const matches = useMediaQuery(theme.breakpoints.down("lg"));
+
   return (
     <>
       <Container>
@@ -30,7 +28,7 @@ const DefaultLayout = () => {
             <Profile />
           </Grid>
           <Grid item xs={12} sm={12} md={12} lg={8} xl={8}>
-            <PublicRoutes matches={matches} />
+            <PublicRoutes  />
           </Grid>
         </Grid>
       </Container>

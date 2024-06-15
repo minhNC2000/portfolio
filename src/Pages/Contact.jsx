@@ -20,7 +20,7 @@ const Contact = () => {
     theme: "colored",
   };
   useEffect(() => {
-    emailjs.init("portfolio_w2irtvi");
+    emailjs.init(process.env.REACT_APP_EMAILJS_KEY);
 
     const form = formRef.current;
     const nameInput = form.name;
@@ -54,10 +54,10 @@ const Contact = () => {
       return;
     }
     emailjs.sendForm(
-      "portfolio_w2irtvi",
+      process.env.REACT_APP_EMAILJS_KEY,
       "template_wyxeuzl",
       e.target,
-      "xegrU455yk9cb46b4"
+      process.env.REACT_APP_EMAILJS_USERID
     );
     toast.success("🤷‍♂️ Gửi thành công!", toastConfig);
     e.target.reset();

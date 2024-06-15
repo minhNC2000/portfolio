@@ -1,14 +1,6 @@
 @import "./breakpoint";
 @media (min-width: $xs) and (max-width: $lg) {
-  // .navigation {
-  //   width: 100%;
-  //   // position: fixed;
-  //   // top: 0;
-  //   z-index: 9999;
-  //   // margin-top: 0;
-  //   bottom: 0;
-  //   left: 0;
-  // }
+  
   .navigation {
     position: fixed;
     z-index: 2;
@@ -16,7 +8,10 @@
     left: 0;
     width: 100%;
     color: #fff;
-    transition: left 0.5s ease-in-out;
+    transition: left 1s ease-in-out;
+    .nav_card {
+      gap: 15px;
+    }
   }
 
   .navigation.closed {

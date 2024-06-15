@@ -40,9 +40,8 @@ function a11yProps(index) {
   };
 }
 
-const Work = (props) => {
+const Work = () => {
   const [value, setValue] = React.useState(0);
-  const { matches } = props;
   const handleChange = (e, newValue) => {
     setValue(newValue);
   };
@@ -60,14 +59,14 @@ const Work = (props) => {
       <div className="work">
         <Container maxWidth="md">
           <h1>Project</h1>
-          <Box sx={{ borderBottom: 1, borderColor: "divider" }}>
+          <Box sx={{ borderBottom: 1, borderColor: "divider",  }}>
             <Tabs
               value={value}
               onChange={handleChange}
               textColor="secondary"
               indicatorColor="secondary"
               variant="fullWidth"
-              aria-label="basic tabs example"
+              aria-label="tabs"
             >
               <Tab label="All" {...a11yProps(0)} />
               <Tab label="ReactJS" {...a11yProps(1)} />
@@ -83,7 +82,7 @@ const Work = (props) => {
                     project.process === "incomplete" ? "coming-soon" : ""
                   }`}
                 >
-                  <a href={project.url} target="_blank" rel="noreferrer">
+                  <a href={project.url} target="_blank"     rel="noreferrer">
                     <img
                       src={
                         project.image === ""
@@ -112,7 +111,6 @@ const Work = (props) => {
                     }`}
                   >
                     <a
-                      key={project.name}
                       href={project.url}
                       target="_blank"
                       rel="noreferrer"
@@ -144,7 +142,6 @@ const Work = (props) => {
                     }`}
                   >
                     <a
-                      key={project.name}
                       href={project.url}
                       target="_blank"
                       rel="noreferrer"
