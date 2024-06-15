@@ -32,7 +32,7 @@ const Navigation = () => {
         className={`arrow-button ${isOpen ? "open" : ""}`}
         onClick={handleToggle}
       >
-        {isOpen ? <ArrowBackIosNewIcon /> : <ArrowForwardIosIcon />}
+        {isOpen ?<ArrowBackIosNewIcon /> : <ArrowForwardIosIcon />}
       </button>
       <Grid container>
         <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>

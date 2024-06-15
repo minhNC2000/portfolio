@@ -33,6 +33,7 @@ const BackToTop = () => {
         {`
           .back-to-top {
             position: fixed;
+            z-index:1 ;
             bottom: 20px;
             right: 20px;
             background-color: #333;
