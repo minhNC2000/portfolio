@@ -37,7 +37,15 @@ const Navigation = () => {
             {navigationData.map((item) => (
               <NavLink to={item.link} key={item.label}>
                 {React.createElement(iconMap[item.icon], {})}
-                <p>{item.label}</p>
+                <p
+                  style={{
+                    display: "flex",
+                    justifyContent: "center",
+                    alignItems: "center",
+                  }}
+                >
+                  {item.label}
+                </p>
               </NavLink>
             ))}
           </ul>

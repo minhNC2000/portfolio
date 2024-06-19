@@ -17,8 +17,13 @@ const Profile = () => {
     // Create a new link element
     const a = document.createElement("a");
     a.href = link;
-
     a.target = "_blank";
+    a.download = "filename.ext"; // specify the download file name
+
+    // Error handling
+    a.onerror = function () {
+      console.error("Failed to download the file.");
+    };
 
     // Simulate a click on the link
     a.click();

@@ -3,7 +3,9 @@
   border-radius: 20px;
   width: 100%;
   height: 100%;
-  
+  img.no-image {
+    display: none;
+  }
   h1 {
     letter-spacing: 1px;
     color: #0b0909;

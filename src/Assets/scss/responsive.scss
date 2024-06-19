@@ -1,6 +1,5 @@
 @import "./breakpoint";
 @media (min-width: $xs) and (max-width: $lg) {
-  
   .navigation {
     position: fixed;
     z-index: 2;

@@ -59,7 +59,7 @@ const Work = () => {
       <div className="work">
         <Container maxWidth="md">
           <h1>Project</h1>
-          <Box sx={{ borderBottom: 1, borderColor: "divider",  }}>
+          <Box sx={{ borderBottom: 1, borderColor: "divider" }}>
             <Tabs
               value={value}
               onChange={handleChange}
@@ -75,14 +75,13 @@ const Work = () => {
           </Box>
           <CustomTabPanel value={value} index={0}>
             {projects.map((project) => (
-              <Grid item xs={12} sm={6}>
+              <Grid item xs={12} sm={6} key={project.name}>
                 <div
-                  key={project.name}
                   className={`projectCard ${
                     project.process === "incomplete" ? "coming-soon" : ""
                   }`}
                 >
-                  <a href={project.url} target="_blank"     rel="noreferrer">
+                  <a href={project.url} target="_blank" rel="noreferrer">
                     <img
                       src={
                         project.image === ""
@@ -103,18 +102,13 @@ const Work = () => {
             {projects
               .filter((project) => project.type === "reactjs")
               .map((project) => (
-                <Grid item xs={12} sm={6}>
+                <Grid item xs={12} sm={6} key={project.name}>
                   <div
-                    key={project.name}
                     className={`projectCard ${
                       project.process === "incomplete" ? "coming-soon" : ""
                     }`}
                   >
-                    <a
-                      href={project.url}
-                      target="_blank"
-                      rel="noreferrer"
-                    >
+                    <a href={project.url} target="_blank" rel="noreferrer">
                       <img
                         src={
                           project.image === ""
@@ -134,26 +128,20 @@ const Work = () => {
             {projects
               .filter((project) => project.type === "landingpage")
               .map((project) => (
-                <Grid item xs={12} sm={6}>
+                <Grid item xs={12} sm={6} key={project.name}>
                   <div
-                    key={project.name}
                     className={`projectCard ${
                       project.process === "incomplete" ? "coming-soon" : ""
                     }`}
                   >
-                    <a
-                      href={project.url}
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      <img
-                        src={
-                          project.image === ""
-                            ? { display: "none" }
-                            : project.image
-                        }
-                        alt={project.image === "" ? "..." : project.name}
-                      />
+                    <a href={project.url} target="_blank" rel="noreferrer">
+                      {project.image !== "" && (
+                        <img
+                          src={project.image}
+                          alt={project.image === "" ? "..." : project.name}
+                        />
+                      )}
+
                       <h3 className="projectName">{project.name}</h3>
                       <p className="techused">{project.codeWith}</p>
                     </a>
