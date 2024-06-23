@@ -1,14 +1,12 @@
 .project-detail {
-
-  .goback{
-    
+  .goback {
     background-color: transparent;
     cursor: pointer;
     outline: none;
     border: none;
     margin-top: 15px;
     z-index: 9;
-    svg{
+    svg {
       font-size: 40px;
     }
   }
@@ -48,11 +46,26 @@
       color: red;
     }
   }
-  .projectImage{
+  .projectImage {
     margin-top: 10px;
-  img{
-    border-radius: 20px;
-  }
+    img {
+      border-radius: 20px;
+    }
+    .btn {
+      font-size: 20px;
+      background: linear-gradient(
+        90deg,
+        rgba(244, 4, 4, 1) 0%,
+        rgba(13, 13, 177, 1) 35%,
+        rgba(6, 77, 215, 1) 50%,
+        rgba(0, 86, 255, 1) 100%
+      );
+      background-size: 200% 200%;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      display: inline-block; /* Necessary for gradients to work on text */
+      animation: gradientAnimation 2s ease infinite;
+    }
   }
 }
 @keyframes gradientAnimation {
