@@ -4,6 +4,7 @@ import { Box, Container, Grid, Tab, Tabs } from "@mui/material";
 import PropTypes from "prop-types";
 import projects from "../json/project.json";
 import { Helmet } from "react-helmet";
+import { Link } from "react-router-dom";
 
 function CustomTabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -81,19 +82,19 @@ const Work = () => {
                     project.process === "incomplete" ? "coming-soon" : ""
                   }`}
                 >
-                  <a href={project.url} target="_blank" rel="noreferrer">
+                  <Link to={`/project/${project.name}`} rel="noreferrer">
                     <img
                       src={
-                        project.image === ""
+                        project.image[0] === ""
                           ? { display: "none" }
-                          : project.image
+                          : project.image[0]
                       }
-                      alt={project.image === "" ? "..." : project.name}
+                      alt={project.image[0] === "" ? "..." : project.name}
                     />
 
                     <h3 className="projectName">{project.name}</h3>
                     <p className="techused">{project.codeWith}</p>
-                  </a>
+                  </Link>
                 </div>
               </Grid>
             ))}
@@ -108,18 +109,18 @@ const Work = () => {
                       project.process === "incomplete" ? "coming-soon" : ""
                     }`}
                   >
-                    <a href={project.url} target="_blank" rel="noreferrer">
+                    <Link to={`/project/${project.name}`} rel="noreferrer">
                       <img
                         src={
-                          project.image === ""
+                          project.image[0] === ""
                             ? { display: "none" }
-                            : project.image
+                            : project.image[0]
                         }
-                        alt={project.image === "" ? "..." : project.name}
+                        alt={project.image[0] === "" ? "..." : project.name}
                       />
                       <h3 className="projectName">{project.name}</h3>
                       <p className="techused">{project.codeWith}</p>
-                    </a>
+                    </Link>
                   </div>
                 </Grid>
               ))}
@@ -134,17 +135,17 @@ const Work = () => {
                       project.process === "incomplete" ? "coming-soon" : ""
                     }`}
                   >
-                    <a href={project.url} target="_blank" rel="noreferrer">
-                      {project.image !== "" && (
+                    <Link to={`/project/${project.name}`}>
+                      {project.image[0] !== "" && (
                         <img
-                          src={project.image}
-                          alt={project.image === "" ? "..." : project.name}
+                          src={project.image[0]}
+                          alt={project.image[0] === "" ? "..." : project.name}
                         />
                       )}
 
                       <h3 className="projectName">{project.name}</h3>
                       <p className="techused">{project.codeWith}</p>
-                    </a>
+                    </Link>
                   </div>
                 </Grid>
               ))}

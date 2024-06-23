@@ -1,31 +1,66 @@
 [
   {
+    "id": 1,
     "name": "Phone Shop",
     "url": "",
-    "codeWith": "ReactJS,NextJS",
+    "codeWith": "ReactJS, NextJS",
     "type": "reactjs",
-    "image": "",
-    "process": "incomplete"
+    "process": "incomplete",
+    "image": [],
+    "description": "This is a project that I have done for a client. It is a website for a HVAC company. The website is responsive and has a contact form that sends an email to the company's email address. The website is hosted on Vercel.",
+    "experience": "Understand how to use *react-router-dom*, *project structure*, *search*, *get data from the server*, understand how to make a sales website"
   },
   {
+    "id": 2,
     "name": "Hvac",
     "url": "https://hvac-project.vercel.app/",
-    "codeWith": "HTML,CSS,JS,ReactJS",
+    "codeWith": "HTML, CSS, JS, ReactJS",
     "type": "reactjs",
-    "image": "Assets/images/havac.jpg"
+    "image": [
+      "/Assets/images/havac.jpg",
+      "/Assets/images/projectHvac/hvac1.png",
+      "/Assets/images/projectHvac/hvac2.png",
+      "/Assets/images/projectHvac/hvac3.png",
+      "/Assets/images/projectHvac/hvac4.png",
+      "/Assets/images/projectHvac/hvac5.png",
+      "/Assets/images/projectHvac/hvac6.png",
+      "/Assets/images/projectHvac/hvac7.png"
+    ],
+    "process": "complete",
+    "experience": "- Understand how to use *react-router-dom*, *project structure*, *search*, *get data from the server*, understand how to make a sales website",
+    "description": "- This is a project that I have done for a client. It is a website for a HVAC company.  The website is responsive and has a contact form that sends an email to the company's email address. The website is hosted on Vercel."
   },
   {
+    "id": 3,
     "name": "gourmet catering",
     "url": "https://gourmet-catering-chi.vercel.app/",
-    "codeWith": "HTML,CSS,ReactJS",
+    "codeWith": "HTML, CSS, ReactJS",
     "type": "landingpage",
-    "image": "Assets/images/gourmetCatering.png"
+    "image": [
+      "/Assets/images/gourmetCatering.png",
+      "/Assets/images/projectGAC/gac2.png",
+      "/Assets/images/projectGAC/gac3.png",
+      "/Assets/images/projectGAC/gac4.png"
+    ],
+    "process": "complete",
+    "experience": "- First Landing page website made with ReactJS",
+    "description": "- This is a project that I have done for a client. *It is a landing page website.* The website is hosted on Vercel."
   },
   {
+    "id": 4,
     "name": "The Band",
     "url": "https://minhnc2000.github.io/theband/",
-    "codeWith": "HTML,CSS,JS",
+    "codeWith": "HTML, CSS, JS",
     "type": "landingpage",
-    "image": "Assets/images/theband.png"
+    "image": [
+      "/Assets/images/theband.png",
+      "/Assets/images/projectTheBand/tb2.png",
+      "/Assets/images/projectTheBand/tb3.png",
+      "/Assets/images/projectTheBand/tb4.png",
+      "/Assets/images/projectTheBand/tb5.png"
+    ],
+    "process": "complete",
+    "experience": "- Understand what is *HTML , CSS, JS.* Practice all about learned knowledge ",
+    "description": "- This is a project that I have done for The Band. The website is responsive The website is hosted on Github. This is the first Project when i learn FrontEnd"
   }
 ]
